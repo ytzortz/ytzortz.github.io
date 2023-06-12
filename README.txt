@@ -1,3 +1,5 @@
+Hello! This is my personal site. Please, do not change/commit anything. Thank you!
+
 JohnDoe Free Bootstrap landing page for personal and commercial use. Designed with ♥️ and creativity by Devcrud.com 
 
 Product Page: https://wwww.devcrud.com/
