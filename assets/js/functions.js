@@ -1,6 +1,6 @@
 function downloadPDF() {
     const link = document.createElement('a');
-    link.href = 'assets/pdfs/JCV_2023_FEB.pdf';
+    link.href = 'assets/pdfs/JCV_2023_OCT.pdf';
     link.download = 'Tzortzakis_CV.pdf';
     link.target = '_blank'; 
     document.body.appendChild(link);
