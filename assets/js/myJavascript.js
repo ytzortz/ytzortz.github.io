@@ -19,7 +19,6 @@ pageCount++;
 document.getElementById('pageCount').textContent = pageCount;
 localStorage.setItem('pageCount', pageCount);
 
-
 window.addEventListener('scroll', function() {
     var scrollPosition = window.scrollY;
     document.getElementById('pixelsCounter').textContent = Math.round(scrollPosition);
