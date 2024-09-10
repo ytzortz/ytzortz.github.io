@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', () => {
    // });
   
     const loadTranslations = (language) => {
-      fetch(`./translations/${language}.json`)
+      fetch(`assets/js/translations/${language}.json`)
         .then(response => response.json())
         .then(translations => {
           elementsToTranslate.forEach(element => {
@@ -38,6 +38,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
   // Set initial language to English
     loadTranslations('en');
-    loadTranslations(initialLanguage);
+    // loadTranslations(initialLanguage);
   });
   

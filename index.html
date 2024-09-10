@@ -24,6 +24,9 @@
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
 
+  <!-- For the translation -->
+  <script src="./assets/js/i18n.js"></script>
+
 </head>
 
 <body>
@@ -39,12 +42,12 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#about" data-translate="about-me">About</a></li>
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
           <li><a class="nav-link scrollto" href="#portfolio">Portfolio</a></li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <!-- <img src="assets/img/united-kingdom-2.png" alt="UK Flag" class="flag-icon" id="en-flag">
-          <img src="assets/img/greece.png" alt="Greek Flag" class="flag-icon" id="gr-flag"> -->
+          <img src="assets/img/united-kingdom-2.png" alt="UK Flag" class="flag-icon" id="en-flag">
+          <img src="assets/img/greece.png" alt="Greek Flag" class="flag-icon" id="gr-flag">
 
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -59,8 +62,8 @@
     <div class="hero-content display-table">
       <div class="table-cell">
         <div class="container">
-          <p class="display-6 color-d">Hello, world!</p>
-          <h1 class="hero-title mb-4">I am Ioannis Tzortzakis</h1>
+          <p class="display-6 color-d" data-translate="hello-world">Hello, world!</p>
+          <h1 class="hero-title mb-4" data-translate="name">I am Ioannis Tzortzakis</h1>
           <p class="hero-subtitle"><span class="typed" data-typed-items="Software Engineer, Web Developer, Wordpress Developer"></span></p>
           <!-- <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p> -->
         </div>
@@ -86,8 +89,8 @@
                     </div>
                     <div class="col-sm-6 col-md-7">
                       <div class="about-info">
-                        <p><span class="title-s">Name: </span> <span>Ioannis Tzortzakis</span></p>
-                        <p><span class="title-s">Profile: </span> <span>Software Developer</span></p>
+                        <p><span class="title-s" data-translate="name-info">Name: </span> <span data-translate="name-info-2">Ioannis Tzortzakis</span></p>
+                        <p><span class="title-s" data-translate="profil-info">Profile: </span> <span>Software Engineer</span></p>
                         <p><span class="title-s">Email: </span> <span>ioannis.tzortzak[AT]gmail.com</span></p>
                       </div>
                     </div>
@@ -98,24 +101,28 @@
                         <strong>Programming:</strong> C, C++, Java, Python<br>
                         <strong>Back-end:</strong> PHP, Java Servlets, JSP<br>
                         <strong>Front-end:</strong> JS, React, CSS-Bootstrap, HTML<br>
-                        <strong>Other:</strong> Wordpress<br>
+                        <strong>Other Frameworks:</strong> Wordpress<br>
+                        <strong>Soft skills:</strong> Communication, Teamwork, Problem solving<br>
                       </p>
                   </div>
                 </div>
                 <div class="col-md-6">
                   <div class="about-me pt-4 pt-md-0">
                     <div class="title-box-2">
-                      <h5 class="title-left">
+                      <h5 class="title-left" data-translate="about-me">
                         About me
                       </h5>
                     </div>
                     <p class="lead">
-                      I'm Ioannis Tzortzakis, but you can call me Yiannis. I am a Software Engineer based in Greece, currently in my final year in the Computer Science Department <a target="_blank" href="https://www.csd.uoc.gr/">(CSD)</a> at the University of Crete. 
+                        <span data-translate="intro-part-1">I'm Ioannis Tzortzakis, but you can call me Yiannis.</span> 
+                        <span data-translate="intro-part-2">I am a Software Engineer based in Greece, currently in my final year in the Computer Science Department </span>
+                        <a target="_blank" href="https://www.csd.uoc.gr/">(CSD)</a> 
+                        <span data-translate="intro-part-3">at the University of Crete.</span>   
                     </p>
-                    <p class="lead">
+                    <p class="lead" data-translate="paragraph-info">
                       I love coding and enjoy learning new skills. I consider myself a responsible team player with an open-minded approach to challenges. My goal is to continually expand my skills and make meaningful contributions to the projects I work on.
                     </p>
-                    <a href="assets/pdf/TzortzakisCV0924.pdf" target="_blank" class="btn btn-primary" download>Download CV</a>
+                    <a href="assets/pdf/TzortzakisCV0924.pdf" target="_blank" class="btn btn-primary" data-translate="cv" download>Download CV</a>
                   </div>
                 </div>
               </div>
@@ -146,7 +153,7 @@
               </div>
               <div class="service-content">
                 <h2 class="s-title">Software Engineer</h2>
-                <p class="s-description text-center">
+                <p class="s-description text-center" data-translate="software-engineer">
                   My experience comes from implementing projects in University, where I gained practical insights into software development principles and methodologies.
                    Through hands-on projects, I honed my skills in coding, debugging, and problem-solving.
                 </p>
@@ -161,8 +168,8 @@
               </div>
               <div class="service-content">
                 <h2 class="s-title">Web Development</h2>
-                <p class="s-description text-center">
-                  If you're impressed with the design of this page and are seeking a similar aesthetic for your own project, don't hesitate to get in touch. With experience in developing and designing various websites for clients, I can assist you in web development, WordPress customization, or creating a stunning online presence tailored to your needs.                </p>
+                <p class="s-description text-center" data-translate="web-development">
+                  If you're impressed with the design of this page and are seeking a similar aesthetic for your own project, don't hesitate to get in touch. With experience in developing and designing various websites for clients, I can assist you in web development, WordPress customization, or creating a stunning online presence tailored to your needs.</p>
               </div>
             </div>
           </div>
@@ -173,7 +180,7 @@
               </div>
               <div class="service-content">
                 <h2 class="s-title">IOS Developer Enthusiast</h2>
-                <p class="s-description text-center">
+                <p class="s-description text-center" data-translate="ios-dev">
                   I am actively seeking opportunities to enhance my skills in mobile (iOS) development. If you have any available possitions, internship, job, or just a project, that would allow me to learn and grow, please feel free to reach out to me.
                 </p>
                 <br>
@@ -406,6 +413,7 @@
 
     
 
+
     <button class="btn-primary" id="gameButton" onclick="startGame();">Start Game 🕹️</button>
 
     <div id="thankYouNote_wrapper">
@@ -433,7 +441,7 @@
                 <div class="row">
                   <div class="col-md-6">
                     <div class="title-box-2">
-                      <h5 class="title-left">
+                      <h5 class="title-left" data-translate="say-hello">
                         Say hello
                       </h5>
                     </div>
@@ -463,10 +471,10 @@
                           <div class="col-md-12 text-center my-3">
                             <div class="loading">Loading</div>
                             <div class="error-message"></div>
-                            <div class="sent-message">Your message has been sent. Thank you!</div>
+                            <div class="sent-message" data-translate="message-sent">Your message has been sent. Thank you!</div>
                           </div>
                           <div class="col-md-12 text-center">
-                            <button type="submit" class="button button-a button-big button-rouded">Send Message</button>
+                            <button type="submit" class="button button-a button-big button-rouded" data-translate="send-message">Send Message</button>
                           </div>
                         </div>
                       </form>
@@ -474,12 +482,12 @@
                   </div>
                   <div class="col-md-6">
                     <div class="title-box-2 pt-4 pt-md-0">
-                      <h5 class="title-left">
+                      <h5 class="title-left" data-translate="get-in-touch">
                         Get in Touch
                       </h5>
                     </div>
                     <div class="more-info">
-                      <p class="lead">
+                      <p class="lead" data-translate="feel-free">
                         Feel free to contact me for inquiries, collaborations, or just to say hello.
                          I'm looking forward to hearing from you!      
                       </p>

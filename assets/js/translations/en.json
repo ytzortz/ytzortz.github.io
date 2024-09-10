@@ -1,0 +1,21 @@
+{
+    "hello-world":"Hello, world!",
+    "name":"I am Ioannis Tzortzakis",
+    "name-info":"Name:",
+    "name-info-2":"Ioannis Tzortzakis",
+    "profil-info":"Profile:",
+    "about-me":"About me",
+    "intro-part-1":"I'm Ioannis Tzortzakis, but you can call me Yiannis.",
+    "intro-part-2":"I am a Software Engineer based in Greece, currently in my final year in the Computer Science Department",
+    "intro-part-3":"at the University of Crete.",
+    "paragraph-info":"I love coding and enjoy learning new skills. I consider myself a responsible team player with an open-minded approach to challenges. My goal is to continually expand my skills and make meaningful contributions to the projects I work on.",
+    "cv":"Download CV",
+    "software-engineer":"My experience comes from implementing projects in University, where I gained practical insights into software development principles and methodologies. Through hands-on projects, I honed my skills in coding, debugging, and problem-solving.",
+    "web-development":"If you're impressed with the design of this page and are seeking a similar aesthetic for your own project, don't hesitate to get in touch. With experience in developing and designing various websites for clients, I can assist you in web development, WordPress customization, or creating a stunning online presence tailored to your needs.",
+    "ios-dev":"I am actively seeking opportunities to enhance my skills in mobile (iOS) development. If you have any available possitions, internship, job, or just a project, that would allow me to learn and grow, please feel free to reach out to me.",
+    "say-hello":"Say Hello",
+    "feel-free":"Feel free to contact me for inquiries, collaborations, or just to say hello. I'm looking forward to hearing from you!",
+    "get-in-touch":"Get in Touch",
+    "message-sent":"Your message has been sent. Thank you!",
+    "send-message":"Send Message"
+}
