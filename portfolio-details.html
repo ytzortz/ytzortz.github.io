@@ -10,7 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/y-icon.png" rel="icon">
+  <link href="assets/img/favicon.ico" rel="icon">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -70,6 +70,8 @@
     <section id="portfolio-details" class="portfolio-details">
       <div class="container">
 
+        <a href="index.html#portfolio" class="btn-primary" style="display: inline-block; margin-bottom: 20px;">&larr; Back to main page</a>
+
         <div class="row gy-4">
 
           <div class="col-lg-8">
@@ -109,9 +111,7 @@
             </div>
             <div class="portfolio-description">
               <h2>Details:</h2>
-              <p id="project-details">
-                
-              </p>
+              <div id="project-details"></div>
             </div>
           </div>
 
@@ -185,7 +185,12 @@
       document.getElementById('project-date').querySelector('span').innerText = date;
       document.getElementById('project-url').querySelector('a').href = url;
       document.getElementById('project-url').querySelector('span').innerText = url;      
-      document.getElementById('project-details').innerText = details;
+      const detailsContainer = document.getElementById('project-details');
+      details.split(/\n+/).filter(line => line.trim().length > 0).forEach(paragraph => {
+        const p = document.createElement('p');
+        p.innerText = paragraph;
+        detailsContainer.appendChild(p);
+      });
       document.getElementById('project-name').querySelector('span').innerText = name;
       document.getElementById('project-image').src = imagePath;
 
@@ -199,7 +204,7 @@
 
   // Function to get category name from index
   function getCategoryName(index) {
-      const categories = ["Web Dev", "Coding", "iOS Dev"];
+      const categories = ["Web Dev", "Coding", "iOS Dev", "Web Application"];
       return categories[index];
   }
 </script>

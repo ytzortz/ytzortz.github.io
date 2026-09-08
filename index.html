@@ -10,7 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/y-icon.png" rel="icon">
+  <link href="assets/img/favicon.ico" rel="icon">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -121,7 +121,7 @@
                     <p class="lead" data-translate="paragraph-info">
                       I love coding and enjoy learning new skills. I consider myself a responsible team player with an open-minded approach to challenges. My goal is to continually expand my skills and make meaningful contributions to the projects I work on.
                     </p>
-                    <a href="assets/pdf/TzortzakisCV0924.pdf" target="_blank" class="btn btn-primary" data-translate="cv" download>Download CV</a>
+                    <a href="assets/pdf/TzortzakisCV0926.pdf" target="_blank" class="btn btn-primary" data-translate="cv" download>Download CV</a>
                   </div>
                 </div>
               </div>
@@ -232,22 +232,22 @@
           </div>
           <div class="col-md-4">
             <div class="work-box">
-              <a href="assets/img/constructions.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
+              <a href="assets/img/kaeeky.png" data-gallery="portfolioGallery" class="portfolio-lightbox">
                 <div class="work-img">
-                  <img src="assets/img/constructions.png" alt="" class="img-fluid">
+                  <img src="assets/img/kaeeky.png" alt="" class="img-fluid">
                 </div>
               </a>
               <div class="work-content">
                 <div class="row">
                   <div class="col-sm-8">
-                    <h2 class="w-title">Construction Company</h2>
+                    <h2 class="w-title" data-translate="kaeeky-title">Kaeeky</h2>
                     <div class="w-more">
-                      <span class="w-ctegory">Web Dev</span> / <span class="w-date">20 March 2024</span>
+                      <span class="w-ctegory" data-translate="kaeeky-category">Web Application</span> / <span class="w-date">12 May 2026</span>
                     </div>
                   </div>
                   <div class="col-sm-4">
                     <div class="w-like">
-                      <a href="portfolio-details.html?category=0&client=Individual%20Client&date=20%202%202024&url=https%3A%2F%2Fwww.paros-constructions.gr&details=This%20project%20was%20developed%20to%20represent%20a%20company%20offering%20a%20range%20of%20services%20including%20Insulations%2C%20Pergolas%2C%20and%20other.%20It%20provides%20visitors%20with%20a%20user-friendly%20platform%20to%20explore%20the%20company's%20expertise.%20With%20clear%20navigation%20and%20concise%20information%2C%20users%20can%20easily%20find%20what%20they%20need%20and%20learn%20more%20about%20the%20services%20provided.%20The%20design%20aims%20to%20convey%20professionalism%20and%20reliability%2C%20reflecting%20the%20company's%20commitment%20to%20quality.&name=Paros%20Constructions&image=constructions.png"> <span class="bi bi-plus-circle"></span></a>
+                      <a href="portfolio-details.html?category=3&client=B2B%20Software&date=12%204%202026&url=https%3A%2F%2Fkaeeky.com%2F&details=Kaeeky%20is%20a%20booking%20and%20rental%20management%20platform%20built%20for%20boat%20and%20watersports%20businesses.%0A%0AIt%20helps%20rental%20operators%20manage%20online%20bookings%2C%20vessel%20availability%2C%20pricing%2C%20refunds%20and%20payments%2C%20and%20day-to-day%20rental%20operations%2C%20all%20from%20one%20simple%20dashboard%2C%20with%20a%20booking%20widget%20that%20integrates%20directly%20into%20the%20business%27s%20website.%0A%0AIt%20was%20built%20after%20seeing%20how%20many%20rental%20businesses%20in%20Greece%20still%20rely%20on%20phone%20calls%2C%20spreadsheets%2C%20and%20manual%20processes%2C%20especially%20during%20the%20busy%20tourist%20season.%0A%0AKaeeky%20focuses%20on%20simple%2C%20competitive%20pricing%2C%20ease%20of%20use%20for%20non-technical%20teams%2C%20Greek-speaking%20support%2C%20and%20is%20built%20from%20real%20industry%20experience%2C%20serving%20boat%20rentals%2C%20jet%20skis%2C%20watersports%2C%20and%20license-free%20vessel%20operators.&name=Kaeeky&image=kaeeky.png"> <span class="bi bi-plus-circle"></span></a>
                     </div>
                   </div>
                 </div>
@@ -415,12 +415,14 @@
     <button class="btn-primary" id="gameButton" onclick="startGame();">Start Game 🕹️</button>
 
     <div id="thankYouNote_wrapper">
-      <p id="thankYouNote">Thank you for playing 😊</p>
+      <p id="thankYouNote" data-translate="thank-you-note">Thank you for playing 😊</p>
     </div>
+
+    <p id="mobileGameNote" data-translate="mobile-game-note">In the desktop version, there's a game here. And fireworks. And an elephant. Well, not quite an elephant, but you get the idea. You're missing out 😊</p>
 
     <div class="containerSplitScreen" id="containerHidden">
       <div id="gameContainer">
-        
+
       </div>
 
 
@@ -443,40 +445,44 @@
                         Say hello
                       </h5>
                     </div>
-                    <div>
-                      <form action="https://formspree.io/f/mvoeaeln" method="post" role="form" class="php-email-form">
-                        <div class="row">
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                    <div class="form-out-of-order-wrapper">
+                      <div class="out-of-order-tape">Out of Order</div>
+                      <fieldset disabled>
+                        <form action="https://formspree.io/f/mvoeaeln" method="post" role="form" class="php-email-form">
+                          <div class="row">
+                            <div class="col-md-12 mb-3">
+                              <div class="form-group">
+                                <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                              </div>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                              <div class="form-group">
+                                <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                              </div>
+                            </div>
+                            <div class="col-md-12 mb-3">
+                              <div class="form-group">
+                                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+                              </div>
+                            </div>
+                            <div class="col-md-12">
+                              <div class="form-group">
+                                <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
+                              </div>
+                            </div>
+                            <div class="col-md-12 text-center my-3">
+                              <div class="loading">Loading</div>
+                              <div class="error-message"></div>
+                              <div class="sent-message" data-translate="message-sent">Your message has been sent. Thank you!</div>
+                            </div>
+                            <div class="col-md-12 text-center">
+                              <button type="submit" class="button button-a button-big button-rouded" data-translate="send-message">Send Message</button>
                             </div>
                           </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
-                            </div>
-                          </div>
-                          <div class="col-md-12 mb-3">
-                            <div class="form-group">
-                              <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
-                            </div>
-                          </div>
-                          <div class="col-md-12">
-                            <div class="form-group">
-                              <textarea class="form-control" name="message" rows="5" placeholder="Message" required></textarea>
-                            </div>
-                          </div>
-                          <div class="col-md-12 text-center my-3">
-                            <div class="loading">Loading</div>
-                            <div class="error-message"></div>
-                            <div class="sent-message" data-translate="message-sent">Your message has been sent. Thank you!</div>
-                          </div>
-                          <div class="col-md-12 text-center">
-                            <button type="submit" class="button button-a button-big button-rouded" data-translate="send-message">Send Message</button>
-                          </div>
-                        </div>
-                      </form>
+                        </form>
+                      </fieldset>
                     </div>
+                    <p class="form-out-of-order-note">This form is out of order. Please email me directly at  ioannis.tzortzak[AT]gmail.com</a>.</p>
                   </div>
                   <div class="col-md-6">
                     <div class="title-box-2 pt-4 pt-md-0">
