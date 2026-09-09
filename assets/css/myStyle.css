@@ -97,6 +97,7 @@
   #menu     { display: inline-block; vertical-align: top; position: relative; }
   #menu p   { margin: 0.5em 0; text-align: center; }
   #menu p a { text-decoration: none; color: black; }
+  #soundToggle { cursor: pointer; font-size: 1.4em; }
   #upcoming { display: block; margin: 0 auto; background-color: #E0E0E0; }
   #score    { color: red; font-weight: bold; vertical-align: middle; }
   #rows     { color: blue; font-weight: bold; vertical-align: middle; }
